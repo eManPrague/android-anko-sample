@@ -16,5 +16,4 @@ class MainActivity : AppCompatActivity() {
 
         startActivity(Intent(this, SignInActivity::class.java))
     }
-
 }
