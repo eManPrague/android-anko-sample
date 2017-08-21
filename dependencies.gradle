@@ -1,0 +1,54 @@
+ext {
+
+    //Versions
+    versions = [
+            appVersion         : '1.0.0',
+            code               : 1,
+
+            buildTools         : "26.0.1",
+            compileSdk         : 26,
+            minSdk             : 15,
+            targetSdkVersion   : 26,
+            sourceCompatibility: JavaVersion.VERSION_1_8,
+            targetCompatibility: JavaVersion.VERSION_1_8,
+            encoding           : "UTF-8",
+
+            gradleBuildTools   : '3.0.0-beta2',
+            gradle             : '4.0-rc-1',
+
+            kotlin             : '1.1.4',
+            supportLib         : '26.0.1',
+            constraintLayout   : '1.0.2',
+            anko               : '0.9.1',
+
+            espresso           : '3.0.0',
+            junit              : '4.12',
+            testRunner         : '1.0.0'
+    ]
+
+    // constants
+    testInstrumentationRunner = "android.support.test.runner.AndroidJUnitRunner"
+
+    gradlePlugins = [
+            android: "com.android.tools.build:gradle:${versions.gradleBuildTools}",
+            kotlin : "org.jetbrains.kotlin:kotlin-gradle-plugin:${versions.kotlin}"
+    ]
+
+    //Support Libraries dependencies
+    supportDependencies = [
+            appCompat      : "com.android.support:appcompat-v7:${versions.supportLib}",
+            constrainLayout: "com.android.support.constraint:constraint-layout:${versions.constraintLayout}"
+    ]
+
+    kotlinDependencies = [
+            kotlinStbLib: "org.jetbrains.kotlin:kotlin-stdlib-jre8:${versions.kotlin}",
+            ankoSdk15   : "org.jetbrains.anko:anko-sdk15:${versions.anko}"
+    ]
+
+    testDependencies = [
+            junit       : "junit:junit:${versions.junit}",
+            espressoCore: "com.android.support.test.espresso:espresso-core:${versions.espresso}",
+            testRunner  : "com.android.support.test:runner:${versions.testRunner}"
+    ]
+
+}
