@@ -13,10 +13,10 @@ ext {
             targetCompatibility: JavaVersion.VERSION_1_8,
             encoding           : "UTF-8",
 
-            gradleBuildTools   : '3.0.0-beta2',
-            gradle             : '4.0-rc-1',
+            gradleBuildTools   : '3.0.0-beta6',
+            gradle             : '4.1',
 
-            kotlin             : '1.1.4',
+            kotlin             : '1.1.51',
             supportLib         : '26.0.1',
             constraintLayout   : '1.0.2',
             anko               : '0.9.1',
