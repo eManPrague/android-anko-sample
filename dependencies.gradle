@@ -19,7 +19,7 @@ ext {
             kotlin             : '1.1.51',
             supportLib         : '26.0.1',
             constraintLayout   : '1.0.2',
-            anko               : '0.9.1',
+            anko               : '0.10.2',
 
             espresso           : '3.0.0',
             junit              : '4.12',
@@ -41,8 +41,16 @@ ext {
     ]
 
     kotlinDependencies = [
-            kotlinStbLib: "org.jetbrains.kotlin:kotlin-stdlib-jre8:${versions.kotlin}",
-            ankoSdk15   : "org.jetbrains.anko:anko-sdk15:${versions.anko}"
+            kotlinStbLib: "org.jetbrains.kotlin:kotlin-stdlib-jre8:${versions.kotlin}"
+    ]
+
+    ankoDependencies = [
+            sdk15              : "org.jetbrains.anko:anko-sdk15:${versions.anko}",
+            sdk15Coroutines    : "org.jetbrains.anko:anko-sdk15-coroutines:${versions.anko}",
+            commons            : "org.jetbrains.anko:anko-commons:${versions.anko}",
+            coroutines         : "org.jetbrains.anko:anko-coroutines:${versions.anko}",
+            appCompat          : "org.jetbrains.anko:anko-appcompat-v7:${versions.anko}",
+            appCompatCoroutines: "org.jetbrains.anko:anko-appcompat-v7-coroutines:${versions.anko}"
     ]
 
     testDependencies = [

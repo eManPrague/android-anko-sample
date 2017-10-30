@@ -39,11 +39,18 @@ dependencies {
 
     // Kotlin
     implementation kotlinDependencies.kotlinStbLib
-    implementation kotlinDependencies.ankoSdk15
 
     // Support Libraries
     implementation supportDependencies.appCompat
     implementation supportDependencies.constrainLayout
+
+    // Anko
+    implementation ankoDependencies.sdk15
+    implementation ankoDependencies.coroutines
+    implementation ankoDependencies.appCompat
+    implementation ankoDependencies.appCompatCoroutines
+    implementation ankoDependencies.commons
+    implementation ankoDependencies.sdk15Coroutines
 
     // Tests
     testCompile testDependencies.junit

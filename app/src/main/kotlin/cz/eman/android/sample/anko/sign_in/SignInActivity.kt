@@ -26,6 +26,7 @@ class SignInActivity : AppCompatActivity() {
   }
 
   fun authorizeUser(username: String, password: String) {
+
     doAsync {
       val authorized = signInBL.checkUserCredentials(AuthCredentials(username = username, password = password))
 

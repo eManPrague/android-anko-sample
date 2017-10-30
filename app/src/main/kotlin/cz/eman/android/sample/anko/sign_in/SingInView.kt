@@ -2,6 +2,7 @@ package cz.eman.android.sample.anko.sign_in
 
 import cz.eman.android.sample.anko.R
 import org.jetbrains.anko.*
+import org.jetbrains.anko.sdk15.coroutines.onClick
 
 /**
  * @author eMan s.r.o.
