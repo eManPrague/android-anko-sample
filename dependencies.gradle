@@ -5,7 +5,7 @@ ext {
             appVersion         : '1.0.0',
             code               : 1,
 
-            buildTools         : "26.0.1",
+            buildTools         : "26.0.2",
             compileSdk         : 26,
             minSdk             : 15,
             targetSdkVersion   : 26,
@@ -13,7 +13,7 @@ ext {
             targetCompatibility: JavaVersion.VERSION_1_8,
             encoding           : "UTF-8",
 
-            gradleBuildTools   : '3.0.0-beta6',
+            gradleBuildTools   : '3.0.0',
             gradle             : '4.1',
 
             kotlin             : '1.1.51',
