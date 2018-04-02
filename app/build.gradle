@@ -16,6 +16,7 @@ android {
         versionName versions.appVersion
         testInstrumentationRunner rootProject.ext.testInstrumentationRunner
     }
+
     buildTypes {
         release {
             minifyEnabled false
@@ -39,11 +40,15 @@ dependencies {
 
     // Kotlin
     implementation kotlinDependencies.kotlinStbLib
+    // Anko
     implementation kotlinDependencies.ankoSdk15
+    implementation kotlinDependencies.ankoDesign
+    implementation kotlinDependencies.ankoAppCompat
 
     // Support Libraries
     implementation supportDependencies.appCompat
     implementation supportDependencies.constrainLayout
+    implementation supportDependencies.design
 
     // Tests
     testCompile testDependencies.junit

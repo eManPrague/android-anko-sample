@@ -20,6 +20,8 @@
 
         <activity android:name=".sign_in.SignInActivity" />
 
+        <activity android:name=".ContainerActivity" />
+
     </application>
 
 </manifest>

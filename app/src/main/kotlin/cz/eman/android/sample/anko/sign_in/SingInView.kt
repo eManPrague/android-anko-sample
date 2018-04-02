@@ -4,6 +4,8 @@ import cz.eman.android.sample.anko.R
 import org.jetbrains.anko.*
 
 /**
+ * UI layout definition for [SignInActivity]
+ *
  * @author eMan s.r.o.
  * @see[AnkoComponent]
  * @see[SignInActivity]
@@ -22,12 +24,14 @@ class SingInView : AnkoComponent<SignInActivity> {
                 id = R.id.usernameEditText
                 hintResource = R.string.sign_in_username
                 textSize = 24f
+                setText("frosty")
             }.lparams(width = matchParent, height = wrapContent)
 
             val password = editText {
                 id = R.id.passwordEditText
                 hintResource = R.string.signIn_password
                 textSize = 24f
+                setText("snowman")
 
             }.lparams(width = matchParent, height = wrapContent)
 
