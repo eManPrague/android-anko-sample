@@ -24,14 +24,12 @@ class SingInView : AnkoComponent<SignInActivity> {
                 id = R.id.usernameEditText
                 hintResource = R.string.sign_in_username
                 textSize = 24f
-                setText("frosty")
             }.lparams(width = matchParent, height = wrapContent)
 
             val password = editText {
                 id = R.id.passwordEditText
                 hintResource = R.string.signIn_password
                 textSize = 24f
-                setText("snowman")
 
             }.lparams(width = matchParent, height = wrapContent)
 
