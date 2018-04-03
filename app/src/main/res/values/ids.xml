@@ -3,4 +3,6 @@
     <item name="usernameEditText" type="id" />
     <item name="passwordEditText" type="id" />
     <item name="signIn_button" type="id"/>
+    <item name="container" type="id"/>
+    <item name="txtNote" type="id"/>
 </resources>

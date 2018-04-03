@@ -11,4 +11,10 @@
 
     <string name="sigIn_alert_access_denied_title">Access Denied</string>
     <string name="sigIn_alert_access_denied_msg">You do not have permission to access this application!</string>
+
+    <string name="notes_dialog_new_note_title">Add a New Note</string>
+    <string name="notes_dialog_new_note_button_positive">Add</string>
+    <string name="notes_dialog_new_note_button_negative">Cancel</string>
+    <string name="notes_dialog_new_note_hint">Write your note here ...</string>
+    <string name="notes_dialog_error_empty_note">Your note cannot be empty!!!</string>
 </resources>

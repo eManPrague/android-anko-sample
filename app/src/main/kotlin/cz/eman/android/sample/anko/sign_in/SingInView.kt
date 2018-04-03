@@ -4,6 +4,8 @@ import cz.eman.android.sample.anko.R
 import org.jetbrains.anko.*
 
 /**
+ * UI layout definition for [SignInActivity]
+ *
  * @author eMan s.r.o.
  * @see[AnkoComponent]
  * @see[SignInActivity]
