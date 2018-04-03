@@ -16,4 +16,5 @@
     <string name="notes_dialog_new_note_button_positive">Add</string>
     <string name="notes_dialog_new_note_button_negative">Cancel</string>
     <string name="notes_dialog_new_note_hint">Write your note here ...</string>
+    <string name="notes_dialog_error_empty_note">Your note cannot be empty!!!</string>
 </resources>

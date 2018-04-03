@@ -44,11 +44,15 @@ dependencies {
     implementation kotlinDependencies.ankoSdk15
     implementation kotlinDependencies.ankoDesign
     implementation kotlinDependencies.ankoAppCompat
+    implementation kotlinDependencies.ankoRecyclerView
+    implementation kotlinDependencies.ankoCardView
 
     // Support Libraries
     implementation supportDependencies.appCompat
     implementation supportDependencies.constrainLayout
     implementation supportDependencies.design
+    implementation supportDependencies.recyclerView
+    implementation supportDependencies.cardView
 
     // Tests
     testCompile testDependencies.junit

@@ -13,8 +13,31 @@ import org.jetbrains.anko.AnkoContext
  */
 class NotesFragment : Fragment() {
 
+    private var notes = ArrayList<String>()
+
+    private val view = NotesView(notes)
+
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        return NotesView().createView(AnkoContext.Companion.create(inflater.context, this, false))
+        return view.createView(AnkoContext.Companion.create(inflater.context, this, false))
+    }
+
+    override fun onActivityCreated(savedInstanceState: Bundle?) {
+        super.onActivityCreated(savedInstanceState)
+
+        savedInstanceState?.let {
+            notes = savedInstanceState.getStringArrayList(SAVED_ARG_NOTES)
+            view.updateNotes(notes)
+        }
+    }
+
+    override fun onSaveInstanceState(outState: Bundle) {
+        outState.putStringArrayList(SAVED_ARG_NOTES, notes)
+        super.onSaveInstanceState(outState)
+    }
+
+    companion object {
+
+        const val SAVED_ARG_NOTES = "notes"
     }
 
 }

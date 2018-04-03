@@ -38,14 +38,18 @@ ext {
     supportDependencies = [
             appCompat      : "com.android.support:appcompat-v7:${versions.supportLib}",
             design         : "com.android.support:design:${versions.supportLib}",
-            constrainLayout: "com.android.support.constraint:constraint-layout:${versions.constraintLayout}"
+            constrainLayout: "com.android.support.constraint:constraint-layout:${versions.constraintLayout}",
+            recyclerView   : "com.android.support:recyclerview-v7:${versions.supportLib}",
+            cardView       : "com.android.support:cardview-v7:${versions.supportLib}",
     ]
 
     kotlinDependencies = [
-            kotlinStbLib : "org.jetbrains.kotlin:kotlin-stdlib-jre8:${versions.kotlin}",
-            ankoSdk15    : "org.jetbrains.anko:anko-sdk15:${versions.anko}",
-            ankoDesign   : "org.jetbrains.anko:anko-design:${versions.anko}",
-            ankoAppCompat: "org.jetbrains.anko:anko-appcompat-v7:${versions.anko}"
+            kotlinStbLib    : "org.jetbrains.kotlin:kotlin-stdlib-jre8:${versions.kotlin}",
+            ankoSdk15       : "org.jetbrains.anko:anko-sdk15:${versions.anko}",
+            ankoDesign      : "org.jetbrains.anko:anko-design:${versions.anko}",
+            ankoAppCompat   : "org.jetbrains.anko:anko-appcompat-v7:${versions.anko}",
+            ankoRecyclerView: "org.jetbrains.anko:anko-recyclerview-v7:${versions.anko}",
+            ankoCardView    : "org.jetbrains.anko:anko-cardview-v7:${versions.anko}"
     ]
 
     testDependencies = [
